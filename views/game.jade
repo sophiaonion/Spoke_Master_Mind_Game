@@ -1,0 +1,37 @@
+doctype html
+html.
+  <h1>Game Start!<h1>
+  <form action="/game" method="post">
+    <p>Enter your guess below. (0, 1, 2 represent different color): </p>
+    <p>
+      Position 1
+      <select name="p1">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+      </select>
+
+      Position 2
+      <select name="p2">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+      </select>
+
+      Position 3
+      <select name="p3">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+      </select>
+
+      Position 4
+      <select name="p4">
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+      </select>
+    </p>
+    <input type="submit" value="Submit">
+  </form>
+  <p>#{message}</p>

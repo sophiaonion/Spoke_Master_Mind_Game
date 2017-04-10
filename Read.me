@@ -1,0 +1,44 @@
+* Tech Stack
+  NodeJs w/ Express
+  MongoDB as server
+  Jasmine.node for testing
+
+* DB looks like this
+  Game ID, Game Answer, Guesses (obj)
+
+* To run the app:
+  0. Pull the project from Github
+  1. Install all the dependencies by running 'npm install' in terminal
+  2. Start MongoDB by input the following in another terminal window 'mongod'
+  3. Then, change the directory to app folder 'cd fullpath/spoke_master_mind_game'
+  4. Run the app by input the following 'DEBUG=Spoke_Masterind_Game:* npm start'
+  5. Go to localhost:3000 to play the game
+  6. to see the history, type http://localhost:3000/game/history
+
+* To run test cases:
+  1.All the test cases are stored in the /tests folder. To run all the test cases,
+  2.Make sure Jasmine-node is installed by typing 'npm install'
+  3.Then run the following command jasmine-node ./tests
+  4.This will in turn run all the test cases that I created
+  * Test cases:
+  The current test cases only cover the basics to check if the system
+  could correctly judge each user movement, and whether the system can
+  successfully send get queries. The next goal is to have some more
+  comprehensive test cases, that able to unit test some specific db queries. 
+
+* Future Improvement/ Next step:
+  1. login, session, authentication, authorization
+  2. interface:
+      a.attach feedback to current content after submission, i.e. display history as users go
+      b.another try button
+      c. when game over, we should not allowed for submission
+      d. restart the game button
+  3. when game over, user can have the option to view the history, the answer, or start over
+      from the same page, instead of going to the main page.
+  4. When game over, reveal the answer
+  5. Limit user input when they won/lose
+  6. Better error handling
+  7. more test case coverage
+
+* Other:
+  -The game is designed under the assumption that user already knows the game rules
